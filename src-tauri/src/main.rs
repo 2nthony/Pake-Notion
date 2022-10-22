@@ -133,7 +133,7 @@ fn main() -> wry::Result<()> {
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new()
         .with_resizable(true)
-        .with_titlebar_transparent(true)
+        // .with_titlebar_transparent(true)
         .with_fullsize_content_view(true)
         .with_titlebar_buttons_hidden(false)
         .with_title_hidden(true)
@@ -155,7 +155,7 @@ fn main() -> wry::Result<()> {
     };
 
     let _webview = WebViewBuilder::new(window)?
-        .with_url("https://weread.qq.com/")?
+        .with_url("https://notion.so")?
         // .with_devtools(true)
         .with_initialization_script(script)
         .with_ipc_handler(handler)
